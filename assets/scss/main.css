@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-evenly;
+  }
+}
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -9944,17 +9951,11 @@ h3 {
   }
 }
 .logo {
-  width: 10% !important;
+  width: 3% !important;
 }
 
-@media (max-width: 768px) {
-  .bg-warning {
-    background-color: #343a40 !important;
-  }
-
-  .navbar-light {
-    color: #fff !important;
-  }
+.show {
+  background-color: #343a40 !important;
 }
 
 /*# sourceMappingURL=main.css.map */
