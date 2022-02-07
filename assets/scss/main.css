@@ -9943,5 +9943,18 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.logo {
+  width: 10% !important;
+}
+
+@media (max-width: 768px) {
+  .bg-warning {
+    background-color: #343a40 !important;
+  }
+
+  .navbar-light {
+    color: #fff !important;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
