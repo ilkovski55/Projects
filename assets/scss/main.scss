@@ -1,11 +1,38 @@
-@media (min-width: 992px){
-    .navbar-expand-lg .navbar-collapse {
-    display: flex ;
-    flex-basis: auto;
-    justify-content: space-evenly;
+@media (max-width: 768px) {
+    .navbar {
+        
     
-}
-}
+        .navbar-light, 
+        .nav-item.active, 
+        .nav-link,
+        .navbar-light, 
+        .nav-item:focus, 
+        .nav-link,
+        .navbar-light, 
+        .nav-item:hover, 
+        .nav-link, 
+        .text-dark {
+            color: #ffffff !important;
+    }
+
+    
+        #navbarSupportedContent,
+        .show {
+            height: 100vh;
+        }
+
+        .bg-black-50 {
+            background-color: #343a40 !important;
+        }
+    }
+    
+
+    }
+    
+
+
+
+
 
 @import "../bootstrap/scss/bootstrap.scss";
 
@@ -15,44 +42,15 @@
     width: 3% !important;
 }
 
-.show {
-    background-color: #343a40 !important;
-}
 
 
-// @media (max-width: 768px) {
-// .navbar {
-    
 
-//     .navbar-light, 
-//     .nav-item.active, 
-//     .nav-link,
-//     .navbar-light, 
-//     .nav-item:focus, 
-//     .nav-link,
-//     .navbar-light, 
-//     .nav-item:hover, 
-//     .nav-link, 
-//     .text-dark {
-//         color: #ffffff !important;
-// }
-//     .navbar-brand {
-//         display: none;
-//     }
-
-//     #navbarSupportedContent,
-//     .show {
-//         height: 100vh;
-//     }
-
-//     .navbar-toggler-icon,
-//      .navbar-toggler {
-//        background-color: #ffffff !important;
-//     }
-    
-// }
-
-// .bg-warning {
+// .show {
 //     background-color: #343a40 !important;
 // }
-// }
+
+
+
+
+
+
