@@ -1,37 +1,13 @@
+@media (max-width: 768px){
 
+    .navbar ul.navbar-nav li.nav-item a.nav-link {
+        color: white !important;
+      }
 
-
-
-
-// @media (max-width: 768px) {
-//     .navbar {
-        
-    
-//         .navbar-light, 
-//         .nav-item.active, 
-//         .nav-link,
-//         .navbar-light, 
-//         .nav-item:focus, 
-//         .nav-link,
-//         .navbar-light, 
-//         .nav-item:hover, 
-//         .nav-link, 
-//         .text-dark {
-//             color: #ffffff !important;
-//     }
-
-    
-//     height: 100vh;
-//         }
-
-        
-//     }
-    
-
-    
-    
-    
-
+      .navbar-collapse {
+          height: 100vh
+      }
+}
 
 
 @import "../bootstrap/scss/bootstrap.scss";
@@ -41,34 +17,6 @@
 .logo {
     width: 3% !important;
 }
-
-
-// @media (max-width: 768px) {
-//     .nav {
-
-
-//     .navbar-collapse {
-//       background: black !important;
-//     }
-
-//     .navbar ul.navbar-nav li.nav-item a.nav-link {
-//         color: white !important;
-//     }
-
-
-//       button.navbar-toggler.navbar-toggler-right {
-//         border-color: black !important;
-//       }
-
-
-//         .bg-warning {
-//             background: black !important;
-//         }
-       
-    
-
-// }
-//   }
 
 
 
