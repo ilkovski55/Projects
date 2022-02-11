@@ -12,6 +12,16 @@
     background-image: url("data:image/svg+xml;..");
   }
 }
+.hover:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--mainColor);
+}
+
+@supports not (-webkit-text-stroke: 2px red) {
+  a:hover {
+    text-shadow: 3px 3px 0 var(--mainColor), -1px -1px 0 var(--mainColor), 1px -1px 0 var(--mainColor), -1px 1px 0 var(--mainColor), 1px 1px 0 var(--mainColor);
+  }
+}
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -9957,15 +9967,7 @@ h3 {
   }
 }
 .logo {
-  width: 4% !important;
+  width: 5% !important;
 }
 
-nav a span {
-  transition: 0.5s linear;
-}
-nav a:hover span {
-  color: #fff;
-  text-shadow: 0 0 10px gray, 0 0 20px gray, 0 0 40px gray;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main,css.map */

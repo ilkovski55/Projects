@@ -1,3 +1,4 @@
+
 @media (max-width: 768px){
 
     .navbar ul.navbar-nav li.nav-item a.nav-link {
@@ -5,9 +6,18 @@
       }
 
       .navbar-collapse {
-          height: 100vh
+          height: 100vh;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;..");
       }
 }
+
+
+
+
+
 
 
 @import "../bootstrap/scss/bootstrap.scss";
@@ -15,10 +25,17 @@
 //
 
 .logo {
-    width: 3% !important;
+    width: 4% !important;
 }
-
-
-
-
+nav {
+a span{
+  transition: .5s linear
+}
+a:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px rgb(128, 128, 128),
+               0 0 20px rgb(128, 128, 128), 
+               0 0 40px rgb(128, 128, 128);
+}
+}
 
