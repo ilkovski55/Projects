@@ -1,25 +1,4 @@
 @charset "UTF-8";
-@media (max-width: 768px) {
-  .navbar .navbar-light,
-.navbar .nav-item.active,
-.navbar .nav-link,
-.navbar .navbar-light,
-.navbar .nav-item:focus,
-.navbar .nav-link,
-.navbar .navbar-light,
-.navbar .nav-item:hover,
-.navbar .nav-link,
-.navbar .text-dark {
-    color: #ffffff !important;
-  }
-  .navbar #navbarSupportedContent,
-.navbar .show {
-    height: 100vh;
-  }
-  .navbar .bg-black-50 {
-    background-color: #343a40 !important;
-  }
-}
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -4019,6 +3998,7 @@ input[type=button].btn-block {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  background: #000;
 }
 
 .navbar-toggler {
