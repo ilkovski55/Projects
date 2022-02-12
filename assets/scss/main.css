@@ -12,6 +12,119 @@
     background-image: url("data:image/svg+xml;..");
   }
 }
+nav ul {
+  /* From Top */
+  /* From Left */
+  /* From Right */
+  /* From Bottom */
+}
+nav ul a {
+  position: relative;
+  padding: 1.4rem 4.2rem;
+  padding-right: 3.1rem;
+  color: black !important;
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+  z-index: 11;
+}
+nav ul a:before, nav ul a:after {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+nav ul a:hover {
+  color: black !important;
+  transition-delay: 0.5s;
+}
+nav ul a:hover:before {
+  transition-delay: 0s;
+}
+nav ul a:hover:after {
+  background: red !important;
+  transition-delay: 0.35s;
+}
+nav ul .from-top:before,
+nav ul .from-top:after {
+  left: 0;
+  height: 0;
+  width: 100%;
+}
+nav ul .from-top:before {
+  bottom: 0;
+  border: 1px solid red;
+  border-top: 0;
+  border-bottom: 0;
+}
+nav ul .from-top:after {
+  top: 0;
+  height: 0;
+}
+nav ul .from-top:hover:before,
+nav ul .from-top:hover:after {
+  height: 100%;
+}
+nav ul .from-left:before,
+nav ul .from-left:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+nav ul .from-left:before {
+  right: 0;
+  border: 1px solid red;
+  border-left: 0;
+  border-right: 0;
+}
+nav ul .from-left:after {
+  left: 0;
+}
+nav ul .from-left:hover:before,
+nav ul .from-left:hover:after {
+  width: 100%;
+}
+nav ul .from-right:before,
+nav ul .from-right:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+nav ul .from-right:before {
+  left: 0;
+  border: 1px solid #262626;
+  border-left: 0;
+  border-right: 0;
+}
+nav ul .from-right:after {
+  right: 0;
+}
+nav ul .from-right:hover:before,
+nav ul .from-right:hover:after {
+  width: 100%;
+}
+nav ul .from-bottom:before,
+nav ul .from-bottom:after {
+  left: 0;
+  height: 0;
+  width: 100%;
+}
+nav ul .from-bottom:before {
+  top: 0;
+  border: 1px solid bg-warning;
+  border-top: 0;
+  border-bottom: 0;
+}
+nav ul .from-bottom:after {
+  bottom: 0;
+  height: 0;
+}
+nav ul .from-bottom:hover:before,
+nav ul .from-bottom:hover:after {
+  height: 100%;
+}
+
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -9958,14 +10071,6 @@ h3 {
 }
 .logo {
   width: 4% !important;
-}
-
-nav a span {
-  transition: 0.5s linear;
-}
-nav a:hover span {
-  color: #fff;
-  text-shadow: 0 0 10px gray, 0 0 20px gray, 0 0 40px gray;
 }
 
 /*# sourceMappingURL=main.css.map */

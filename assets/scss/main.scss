@@ -15,8 +15,146 @@
 }
 
 
+nav {
 
+    ul {
+a {		
+	position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	color: black  !important;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+    z-index: 11;
+}
 
+a:before, a:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+a:hover {
+	color: black  !important;
+	transition-delay: .5s;
+}
+
+a:hover:before {
+	transition-delay: 0s;
+}
+
+a:hover:after {
+	background: red  !important;
+	transition-delay: .35s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid red;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
+
+/* From Left */
+
+.from-left:before, 
+.from-left:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.from-left:before {
+	right: 0;
+	border: 1px solid red;
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-left:after {
+	left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+	width: 100%;
+}
+
+/* From Right */
+
+.from-right:before, 
+.from-right:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.from-right:before {
+	left: 0;
+	border: 1px solid #262626;
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-right:after {
+	right: 0;
+}
+
+.from-right:hover:before,
+.from-right:hover:after {
+	width: 100%;
+}
+
+/* From Bottom */
+
+.from-bottom:before, 
+.from-bottom:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-bottom:before {
+	top: 0;	
+	border: 1px solid bg-warning;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-bottom:after {
+	bottom: 0;
+	height: 0;
+}
+
+.from-bottom:hover:before,
+.from-bottom:hover:after {
+	height: 100%;
+}
+    }
+
+}
 
 
 
@@ -27,15 +165,16 @@
 .logo {
     width: 4% !important;
 }
-nav {
-a span{
-  transition: .5s linear
-}
-a:hover span{
-  color: #fff;
-  text-shadow: 0 0 10px rgb(128, 128, 128),
-               0 0 20px rgb(128, 128, 128), 
-               0 0 40px rgb(128, 128, 128);
-}
-}
+// nav {
+// a span{
+//   transition: .5s linear
+// }
+// a:hover span{
+//   color: #fff;
+//   text-shadow: 0 0 10px rgb(128, 128, 128),
+//                0 0 20px rgb(128, 128, 128), 
+//                0 0 40px rgb(128, 128, 128);
+// }
+// }
+
 
