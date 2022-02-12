@@ -9,49 +9,49 @@
     <link rel="stylesheet" href="./assets/scss/main.css" />
   </head>
 
-  <body class="">
+  <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-      <div
-        class=" navbar-brand d-flex justify-content-center align-items-center flex-column ml-5 d-inline-block logo"
+      <div id="logo"
+        class=" d-flex justify-content-center align-items-center flex-column ml-5 d-inline-block logo"
       >
-        <a href="index.html" class="">
+        <a href="index.html" class="navbar-brand ml-3 text-black-50">
           <img src="./Design/Logo-resized.png" alt="" class="w-100 d-block" />
         </a>
         <h6 class="mb-0"><small class="font-weight-bold">BRAINSTER</small></h6>
       </div>
-      <button class="navbar-toggler animated-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22" aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="animated-icon"><span></span><span></span><span></span></div>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent22">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold px-4 from-top"
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-toggler-inner onclick="myFunction()"></div>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto pt-md-5 pt-lg-0">
+          <li class="nav-item py-sm-3">
+            <a class="nav-link font-weight-bold p-lg-2 mx-lg-5 from-top"
               href="https://brainster.co/marketing/"
               ><span>Академија за маркетинг</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item py-sm-3">
             <a
-            class="nav-link font-weight-bold px-4 from-left"
+            class="nav-link font-weight-bold p-lg-2 mx-lg-5 from-left"
             href="https://brainster.co/full-stack/"
             ><span>Академија за програмирање</span></a
           >
           </li>
-          <li class="nav-item">
+          <li class="nav-item py-sm-3">
             <a
-              class="nav-link font-weight-bold px-4 from-right"
+              class="nav-link font-weight-bold p-lg-2 mx-lg-5 from-right"
               href="https://brainster.co/data-science/"
               ><span>Академија за data science</span></a
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item py-sm-3">
             <a
-            class="nav-link font-weight-bold px-4 from-bottom"
+            class="nav-link font-weight-bold p-lg-2 mx-lg-5 from-bottom"
             href="https://brainster.co/graphic-design/"
             ><span>Академија за дизајн</span></a
           >
          </li>
 
-         <li class="nav-item">
+         <li class="nav-item py-sm-3">
 
           <a
           href="index2.html"
@@ -59,7 +59,6 @@
         ><span>Вработи наш студент</span></a>
          </li>
         </ul>
-        
         </div>
     </nav>
     
@@ -69,18 +68,24 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/2ba8dc390d.js" crossorigin="anonymous"></script>
   </body>
-<script>
+<!-- hambunrger menu color and X button -->
+<script>id="myDIV"
   $(".navbar-toggler").click(function () {
     $("nav").toggleClass("bg-dark");
+    })
+    $(".nav-brand").click(function () {
+    $("logo").toggleClass("d-none");
     })
   </script>
 
 <script>
-  $(document).ready(function () {
-  $('.animated-button').on('click', function () {
+$(document).ready( $(function(){
+    var navbtn = $('.navbar-toggler');
 
-    $('.animated-icon').toggleClass('open');
-  });
-});
+    $(navbtn).click(function(){
+        $(navbtn).toggleClass('active');
+    });
+}));
+
 </script>
 </html>
