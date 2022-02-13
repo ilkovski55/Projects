@@ -11,41 +11,41 @@
 
   <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-      <div id="logo"
-        class=" d-flex justify-content-center align-items-center flex-column ml-5 d-inline-block logo"
+      <div
+        class="d-flex justify-content-center align-items-center d-inline-block flex-column logo"
       >
-        <a href="index.html" class="navbar-brand ml-3 text-black-50">
+        <a href="index.html" class="navbar-brand text-black-50 align-self-center ml-3">
           <img src="./Design/Logo-resized.png" alt="" class="w-100 d-block" />
         </a>
         <h6 class="mb-0"><small class="font-weight-bold">BRAINSTER</small></h6>
       </div>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="navbar-toggler-inner onclick="myFunction()"></div>
+        <div class="navbar-toggler-inner" ></div>
     </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto pt-md-5 pt-lg-0">
-          <li class="nav-item py-sm-3">
-            <a class="nav-link font-weight-bold p-lg-2 mx-lg-5 from-top"
+          <li class="nav-item py-sm-3 ml-2">
+            <a class="nav-link font-weight-bold p-lg-2 from-top ml-0 ml-lg-4 h5 text-center"
               href="https://brainster.co/marketing/"
               ><span>Академија за маркетинг</span></a>
           </li>
-          <li class="nav-item py-sm-3">
+          <li class="nav-item py-sm-3 ml-2">
             <a
-            class="nav-link font-weight-bold p-lg-2 mx-lg-5 from-left"
+            class="nav-link font-weight-bold p-lg-2  from-left ml-0 ml-lg-4 h5 text-center"
             href="https://brainster.co/full-stack/"
             ><span>Академија за програмирање</span></a
           >
           </li>
-          <li class="nav-item py-sm-3">
+          <li class="nav-item py-sm-3 ml-2">
             <a
-              class="nav-link font-weight-bold p-lg-2 mx-lg-5 from-right"
+              class="nav-link font-weight-bold p-lg-2 from-right ml-0 ml-lg-4 h5 text-center"
               href="https://brainster.co/data-science/"
               ><span>Академија за data science</span></a
             >
           </li>
-          <li class="nav-item py-sm-3">
+          <li class="nav-item py-sm-3 ml-2">
             <a
-            class="nav-link font-weight-bold p-lg-2 mx-lg-5 from-bottom"
+            class="nav-link font-weight-bold p-lg-2 from-bottom ml-0 ml-lg-4 h5 text-center"
             href="https://brainster.co/graphic-design/"
             ><span>Академија за дизајн</span></a
           >
@@ -55,8 +55,8 @@
 
           <a
           href="index2.html"
-          class="btn btn-danger text-white mx-5 py-2 button"
-        ><span>Вработи наш студент</span></a>
+          class="btn btn-danger text-white mx-5 py-2 button" 
+        ><span class="h5">Вработи наш студент</span></a>
          </li>
         </ul>
         </div>
@@ -69,14 +69,12 @@
     <script src="https://kit.fontawesome.com/2ba8dc390d.js" crossorigin="anonymous"></script>
   </body>
 <!-- hambunrger menu color and X button -->
-<script>id="myDIV"
+<script>
   $(".navbar-toggler").click(function () {
     $("nav").toggleClass("bg-dark");
     })
-    $(".nav-brand").click(function () {
-    $("logo").toggleClass("d-none");
-    })
   </script>
+
 
 <script>
 $(document).ready( $(function(){
@@ -86,6 +84,7 @@ $(document).ready( $(function(){
         $(navbtn).toggleClass('active');
     });
 }));
-
 </script>
+
+
 </html>

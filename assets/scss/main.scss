@@ -20,77 +20,6 @@
   }
 }
 
-.navbar-toggler:focus {
-  outline: none;
-}
-
-.navbar-toggler {
-  border: 0;
-  cursor: pointer;
-  width: 2.5em;
-  height: 2.5em;
-  padding: 0 0 0.15em 0.35em ;
-}
-
-.navbar-toggler-inner,
-.navbar-toggler-inner::before,
-.navbar-toggler-inner::after {
-  width: 1.5em;
-  height: 0.16em;
-  background-color: #000000;
-  position: absolute;
-}
-
-.navbar-toggler-inner::before {
-  content: "";
-  display: block;
-  top: -0.5em;
-  border-radius: 0.25rem !important;
-}
-
-.navbar-toggler-inner::after {
-  content: "";
-  display: block;
-  bottom: -0.5em;
-  border-radius: 0.25rem !important;
-}
-
-.navbar-toggler.active .navbar-toggler-inner {
-  transition: 0.2s;
-  transform: rotate(45deg);
-}
-
-.navbar-toggler.active .navbar-toggler-inner::before {
-  top: 0;
-  opacity: 0;
-}
-
-.navbar-toggler.active .navbar-toggler-inner::after {
-  bottom: 0;
-  transform: rotate(-90deg);
-}
-
-.navbar-toggler-inner {
-  transition: 0.2s;
-  transform: rotate(0deg);
-}
-   
-
-
-
-@import "../bootstrap/scss/bootstrap.scss";
-//
-
-.logo {
-  width: 10% !important;
-
-  @media (max-width: 425px) {
-    .logo {
-      width: 100% !important;
-    }
-  }
-}
-
 .nav-item {
   .btn {
     position: relative;
@@ -312,3 +241,74 @@ nav {
     }
   }
 }
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  border: 0;
+  cursor: pointer;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0 0 0.15em 0.35em ;
+}
+
+.navbar-toggler-inner,
+.navbar-toggler-inner::before,
+.navbar-toggler-inner::after {
+  width: 1.5em;
+  height: 0.16em;
+  background-color: #000000;
+  position: absolute;
+}
+
+.navbar-toggler-inner::before {
+  content: "";
+  display: block;
+  top: -0.5em;
+  border-radius: 0.25rem !important;
+}
+
+.navbar-toggler-inner::after {
+  content: "";
+  display: block;
+  bottom: -0.5em;
+  border-radius: 0.25rem !important;
+}
+
+.navbar-toggler.active .navbar-toggler-inner {
+  transition: 0.2s;
+  transform: rotate(45deg);
+}
+
+.navbar-toggler.active .navbar-toggler-inner::before {
+  top: 0;
+  opacity: 0;
+}
+
+.navbar-toggler.active .navbar-toggler-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+
+.navbar-toggler-inner {
+  transition: 0.2s;
+  transform: rotate(0deg);
+}
+
+
+
+@import "../bootstrap/scss/bootstrap.scss";
+//
+
+.logo {
+  width: 10% !important;
+
+  @media (max-width: 425px) {
+    .logo {
+      width: 100% !important;
+    }
+  }
+}
+
