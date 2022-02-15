@@ -7,28 +7,32 @@
     <title>Brainster Labs</title>
 
     <link rel="stylesheet" href="./assets/scss/main.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
+
   </head>
   <body>
-
-
-    
-
-   
-
-     <form action="" class="form-group form-row">
-        <label class="form-check-label form-control-lg btn-block col-12 col-lg-4 text-center bg-primary text-white border-0" for="filter-marketing">Проекти на студенти по академија за маркетинг</label>
-        <input type="checkbox" class="form-check-input btn" id="filter-marketing">
-    
-
-  
-        <label class="form-check-label form-control-lg col-12 col-lg-4 text-center btn-block bg-warning text-white border-0" for="filter-coding">Проекти на студенти по академија за програмирање</label>
-        <input type="checkbox" class="form-check-input" id="filter-coding">   
-  
-
-     
-        <label class="form-check-label form-control-lg col-12 col-lg-4 text-center btn-block bg-danger text-white border-0" for="filter-design">Проекти на студенти по академија за дизајн</label>
-        <input type="checkbox" class="form-check-input" id="filter-design">
-      </form>
+    <div class=" d-flex align-content-center justify-content-center buttons">
+      <div class="form-group form-check d-flex align-items-center   border buttons">
+        <label class="form-check-label form-control-lg text-center   border-0" for="filter-marketing">Проекти на студенти по академија за маркетинг</label>
+        <i class="fas fa-check-circle ml-5"></i>
+        <input type="checkbox" class="form-check-input d-none" id="filter-marketing">
+      </div>
+      <div class="form-group form-check d-flex align-items-center bg-dark border  buttons">
+        <label class="form-check-label form-control-lg text-center bg-dark text-white border-0" for="filter-coding">Проекти на студенти по академија за програмирање</label>
+        <i class="fas fa-check-circle ml-5"></i>
+        <input type="checkbox" class="form-check-input d-none" id="filter-coding">
+      </div>
+      <div class="form-group form-check d-flex align-items-center bg-dark border buttons"> 
+        <label class="form-check-label form-control-lg text-center bg-dark text-white border-0" for="filter-design">Проекти на студенти по академија за дизајн</label>
+        <i class="fas fa-check-circle ml-5"></i>
+        <input type="checkbox" class="form-check-input d-none" id="filter-design">
+      </div>
+    </div>
   
 
     <div class="container-fluid">
@@ -284,5 +288,6 @@
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+   
   </body>
 </html>
