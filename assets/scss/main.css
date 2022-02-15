@@ -117,7 +117,7 @@ nav ul .from-top:after {
   top: 0;
   height: 0;
   border-radius: 2%;
-  box-shadow: 0 0 10px #ececec, 0 0 30px #d8d8d8, 0 0 50px #fffdfd;
+  box-shadow: 0 0 10px var(--white), 0 0 30px var(--white), 0 0 50px var(--white);
 }
 nav ul .from-top:hover:before,
 nav ul .from-top:hover:after {
@@ -139,7 +139,7 @@ nav ul .from-left:before {
 nav ul .from-left:after {
   left: 0;
   border-radius: 2%;
-  box-shadow: 0 0 10px #ececec, 0 0 30px #d8d8d8, 0 0 50px #fffdfd;
+  box-shadow: 0 0 10px var(--white), 0 0 30px var(--white), 0 0 50px var(--white);
 }
 nav ul .from-left:hover:before,
 nav ul .from-left:hover:after {
@@ -161,7 +161,7 @@ nav ul .from-right:before {
 nav ul .from-right:after {
   right: 0;
   border-radius: 2%;
-  box-shadow: 0 0 10px #ececec, 0 0 30px #d8d8d8, 0 0 50px #fffdfd;
+  box-shadow: 0 0 10px var(--white), 0 0 30px var(--white), 0 0 50px var(--white);
 }
 nav ul .from-right:hover:before,
 nav ul .from-right:hover:after {
@@ -184,7 +184,7 @@ nav ul .from-bottom:after {
   bottom: 0;
   height: 0;
   border-radius: 2%;
-  box-shadow: 0 0 10px #ececec, 0 0 30px #d8d8d8, 0 0 50px #fffdfd;
+  box-shadow: 0 0 10px var(--white), 0 0 30px var(--white), 0 0 50px var(--white);
 }
 nav ul .from-bottom:hover:before,
 nav ul .from-bottom:hover:after {
@@ -194,7 +194,7 @@ nav ul ul li a span {
   transition: 0.3s linear;
 }
 nav ul ul li a:hover span {
-  text-shadow: 0 0 10px #8a0a0a, 0 0 20px #8a0a0a, 0 0 40px #8a0a0a;
+  text-shadow: 0 0 10px var(--danger), 0 0 20px var(--danger), 0 0 40px var(--danger);
 }
 
 .navbar-toggler:focus {
@@ -284,7 +284,7 @@ nav ul ul li a:hover span {
   right: 50%;
   transform: translate(50%, -50%);
   color: var(--war);
-  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+  text-shadow: 1px 1px 1px var(--secondary), 1px 2px 1px var(--secondary), 1px 3px 1px var(--secondary), 1px 4px 1px var(--secondary), 1px 5px 1px var(--secondary), 1px 6px 1px var(--secondary), 1px 7px 1px var(--secondary), 1px 8px 1px var(--secondary), 1px 9px 1px var(--secondary), 1px 10px 1px var(--secondary), 1px 18px 6px var(--dark), 1px 22px 10px var(--dark), 1px 25px 35px var(--dark), 1px 30px 60px var(--dark);
 }
 
 .buttons ul li:hover {
