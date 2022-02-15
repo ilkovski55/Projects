@@ -1,4 +1,15 @@
 @charset "UTF-8";
+.buttons ul li:hover {
+  cursor: pointer;
+  background-color: var(--secondary) !important;
+}
+.buttons ul li i {
+  right: 20px;
+  top: 30px;
+  font-size: 40px;
+  display: none;
+}
+
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -9942,9 +9953,6 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
-}
-.buttons {
-  flex: 33.3333%;
 }
 
 /*# sourceMappingURL=main.css.map */
