@@ -1,13 +1,4 @@
 @charset "UTF-8";
-@media (max-width: 768px) {
-  .navbar ul.navbar-nav li.nav-item a.nav-link {
-    color: white !important;
-  }
-
-  .navbar-collapse {
-    height: 100vh;
-  }
-}
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -9951,9 +9942,6 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
-}
-.logo {
-  width: 3% !important;
 }
 
 /*# sourceMappingURL=main.css.map */
