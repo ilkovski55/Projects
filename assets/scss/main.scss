@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   .navbar ul.navbar-nav li.nav-item a.nav-link {
-    color: white !important;
+    color: var(--white) !important;
   }
 
   .navbar-collapse,
@@ -33,9 +33,10 @@
       z-index: 100;
 
       &:hover {
-        color: var(--dark) !important;
-        text-shadow: 0 0 10px rgb(138, 10, 10), 0 0 20px rgb(138, 10, 10),
-          0 0 40px rgb(138, 10, 10);
+        color: var(--dark);
+        text-shadow: 0 0 10px var(--danger), 
+          0 0 20px var(--danger),
+          0 0 40px var(--danger);
       }
     }
 
@@ -74,9 +75,11 @@
       &:after {
         transform: translate3d(0, 0, 0);
       }
+
     }
   }
 }
+
 
 
 nav {
@@ -91,6 +94,7 @@ nav {
       user-select: none;
       z-index: 11;
     }
+
 
     a:before,
     a:after {
@@ -297,9 +301,51 @@ nav {
   transform: rotate(0deg);
 }
 
+.banner {
+  height: 70vh;
+
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-position: bottom;
+  }
+  .heading {
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    z-index: 3;
+
+    h1 {
+      font-size: 8rem;
+
+      @media (max-width: 758px) {
+        font-size: 4rem;
+      }
+    }
+
+    .heading-text {
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      color: var(--war);
+      text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+        1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+        1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+        1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+    }
+  }
+}
+
 
 
 @import "../bootstrap/scss/bootstrap.scss";
+
 //
 
 .logo {
