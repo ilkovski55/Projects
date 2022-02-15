@@ -268,7 +268,7 @@ nav ul ul li a:hover span {
   z-index: 3;
 }
 .banner .heading h1 {
-  font-size: 8rem;
+  font-size: 7rem;
 }
 @media (max-width: 758px) {
   .banner .heading h1 {
