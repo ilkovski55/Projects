@@ -302,7 +302,7 @@ nav {
 }
 
 .banner {
-  height: 70vh;
+  height: 65vh;
 
   video {
     object-fit: cover;
@@ -342,6 +342,20 @@ nav {
   }
 }
 
+.buttons {
+  ul li:hover {
+    cursor: pointer;
+    background-color: var(--secondary) !important;
+  }
+
+  ul li i {
+    right: 20px;
+    top: 30px;
+    font-size: 40px;
+    display: none;
+  }
+}
+
 
 
 @import "../bootstrap/scss/bootstrap.scss";
@@ -357,4 +371,5 @@ nav {
     }
   }
 }
+
 
