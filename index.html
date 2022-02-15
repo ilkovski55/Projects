@@ -16,17 +16,17 @@
   </head>
 
   <body class="bg-warning">
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning px-4 py-2">
       <div
-        class="d-flex justify-content-center align-items-center d-inline-block flex-column logo"
+        class=" navbar-brand d-flex justify-content-center align-items-center d-inline-block flex-column logo"
       >
-        <a href="index.html" class="navbar-brand text-black-50 align-self-center ml-3">
+        <a href="index.html" class="text-black-50 align-self-center">
           <img src="./Design/Logo-resized.png" alt="" class="w-100 d-block" />
         </a>
         <h6 class="mb-0"><small class="font-weight-bold">BRAINSTER</small></h6>
       </div>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="navbar-toggler-inner" ></div>
+        <div class="navbar-toggler-inner"></div>
     </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto pt-md-5 pt-lg-0">
@@ -37,7 +37,7 @@
           </li>
           <li class="nav-item py-sm-3 ml-2">
             <a
-            class="nav-link font-weight-bold p-lg-2  from-left ml-0 ml-lg-4 h5"
+            class="nav-link font-weight-bold p-lg-2 from-left ml-0 ml-lg-4 h5"
             href="https://brainster.co/full-stack/"
             ><span>Академија за програмирање</span></a>
           </li>
@@ -671,23 +671,6 @@
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/2ba8dc390d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
-<!-- hambunrger menu color and X button -->
-<script>
-  $(".navbar-toggler").click(function () {
-    $("nav").toggleClass("bg-dark");
-    })
-  </script>
-
-
-<script>
-$(document).ready( $(function(){
-    var navbtn = $('.navbar-toggler');
-
-    $(navbtn).click(function(){
-        $(navbtn).toggleClass('active');
-    });
-}));
-</script>
-
 </html>

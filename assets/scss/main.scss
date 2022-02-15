@@ -1,12 +1,16 @@
 @media (max-width: 768px) {
   .navbar ul.navbar-nav li.nav-item a.nav-link {
     color: var(--white) !important;
+    
   }
 
+  
   .navbar-collapse,
   .show{
     height: 100vh !important;
     transition: .2ms;
+    
+
   }
 
   .collapse {
@@ -354,6 +358,15 @@ nav {
     top: 30px;
     font-size: 40px;
     display: none;
+  }
+
+  ul li.selected {
+    background-color: var(--danger) !important;
+    color: var(--dark) !important;
+  }
+
+  ul li.selected i {
+    display: block;
   }
 }
 
