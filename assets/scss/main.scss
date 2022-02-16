@@ -9,6 +9,18 @@
   }
 }
 
+.animation-card:hover {
+    transition: all 1s ease-in-out;
+    transform: scale(1.2);
+    opacity: 1.5;
+    z-index: 99;
+  }
+  
+  .row:hover > .animation-card:not(:hover) {
+    filter: blur(4px);
+  }
+  
+
 
 
 @import "../bootstrap/scss/bootstrap.scss";
