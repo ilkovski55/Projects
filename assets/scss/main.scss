@@ -1,20 +1,22 @@
 @media (max-width: 768px) {
   .navbar ul.navbar-nav li.nav-item a.nav-link {
     color: var(--white) !important;
-    
   }
 
   .navbar-collapse,
   .show{
     height: 100vh !important;
     transition: .2ms;
-    
-
   }
 
   .collapse {
     transition: .2ms;
   }
+
+  .button {
+    left: -6%;
+  }
+
 }
 
 
@@ -242,60 +244,60 @@ nav {
   }
 }
 
-// .navbar-toggler:focus {
-//   outline: none;
-// }
+.navbar-toggler:focus {
+  outline: none;
+}
 
-// .navbar-toggler {
-//   border: 0;
-//   cursor: pointer;
-//   width: 2.5em;
-//   height: 2.5em;
-//   padding: 0 0 0.15em 0.35em ;
-// }
+.navbar-toggler {
+  border: 0;
+  cursor: pointer;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0 0 0.15em 0.35em ;
+}
 
-// .navbar-toggler-inner,
-// .navbar-toggler-inner::before,
-// .navbar-toggler-inner::after {
-//   width: 1.5em;
-//   height: 0.16em;
-//   background-color: #000000;
-//   position: absolute;
-// }
+.navbar-toggler-inner,
+.navbar-toggler-inner::before,
+.navbar-toggler-inner::after {
+  width: 1.5em;
+  height: 0.16em;
+  background-color: #000000;
+  position: absolute;
+}
 
-// .navbar-toggler-inner::before {
-//   content: "";
-//   display: block;
-//   top: -0.5em;
-//   border-radius: 0.25rem !important;
-// }
+.navbar-toggler-inner::before {
+  content: "";
+  display: block;
+  top: -0.5em;
+  border-radius: 0.25rem !important;
+}
 
-// .navbar-toggler-inner::after {
-//   content: "";
-//   display: block;
-//   bottom: -0.5em;
-//   border-radius: 0.25rem !important;
-// }
+.navbar-toggler-inner::after {
+  content: "";
+  display: block;
+  bottom: -0.5em;
+  border-radius: 0.25rem !important;
+}
 
-// .navbar-toggler.active .navbar-toggler-inner {
-//   transition: 0.2s;
-//   transform: rotate(45deg);
-// }
+.navbar-toggler.active .navbar-toggler-inner {
+  transition: 0.2s;
+  transform: rotate(45deg);
+}
 
-// .navbar-toggler.active .navbar-toggler-inner::before {
-//   top: 0;
-//   opacity: 0;
-// }
+.navbar-toggler.active .navbar-toggler-inner::before {
+  top: 0;
+  opacity: 0;
+}
 
-// .navbar-toggler.active .navbar-toggler-inner::after {
-//   bottom: 0;
-//   transform: rotate(-90deg);
-// }
+.navbar-toggler.active .navbar-toggler-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+}
 
-// .navbar-toggler-inner {
-//   transition: 0.2s;
-//   transform: rotate(0deg);
-// }
+.navbar-toggler-inner {
+  transition: 0.2s;
+  transform: rotate(0deg);
+}
 
 .banner {
   height: 65vh;
@@ -360,13 +362,12 @@ nav {
     display: block;
   }
 
-  @media (max-width: 768px){
+  @media (max-width: 425px){
     ul li p{
       font-size: 16px;
     }
   }
 }
-
 
 
 

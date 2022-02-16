@@ -1,24 +1,28 @@
 // navbar
-document.querySelector(".navbar-toggler").addEventListener("click", toggleLogo);
+document.querySelector(".navbar-toggler").addEventListener("click", toggleAll);
 
-function toggleLogo() {
+function toggleAll() {
   var logoVisibility = document.querySelector(".navbar-brand").style.visibility;
   if (logoVisibility == "visible" || logoVisibility == "") {
     document.querySelector(".navbar-brand").style.visibility = "hidden";
   } else {
     document.querySelector(".navbar-brand").style.visibility = "visible";
   }
+
+  var displayAll = document.querySelector(".none").style.display;
+  if (displayAll == "inline-block" || displayAll == "") {
+    document.querySelector(".none").style.display = "none";
+  } else {
+    document.querySelector(".none").style.display = "inline-block";
+  }
+
   document.querySelector(".navbar").classList.toggle("nav-shown");
   document.querySelector(".navbar").classList.toggle("bg-dark");
-  document.querySelector(".banner").classList.toggle("");
-  
 }
 
 // filters cards
 document.querySelector("#filter-coding").addEventListener("click", showCoding);
-document
-  .querySelector("#filter-marketing")
-  .addEventListener("click", showMarketing);
+document.querySelector("#filter-marketing").addEventListener("click", showMarketing);
 document.querySelector("#filter-design").addEventListener("click", showDesign);
 
 function showCoding() {
