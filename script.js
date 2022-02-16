@@ -10,6 +10,7 @@ function toggleLogo() {
   }
   document.querySelector(".navbar").classList.toggle("nav-shown");
   document.querySelector(".navbar").classList.toggle("bg-dark");
+  document.querySelector(".banner").classList.toggle("");
   
 }
 
