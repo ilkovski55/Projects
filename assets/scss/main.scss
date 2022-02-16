@@ -19,13 +19,12 @@
 
 }
 
-
 .nav-item {
   .btn {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    top: 0;
+    top: -30%;
     right: 0;
 
     span {
@@ -79,6 +78,8 @@
     }
   }
 }
+
+
 
 nav {
   ul {
@@ -369,6 +370,28 @@ nav {
   }
 }
 
+.card {
+    opacity: 0.98;
+    box-shadow: 0px 0px 40px -1px var(--dark);
+  
+  &:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 75px -1px var(--dark);
+    cursor: pointer;
+  }
+}
+
+.animation-card:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);
+    opacity: 1.5;
+    z-index: 99;
+  }
+  
+  .row:hover > .animation-card:not(:hover) {
+    filter: blur(4px);
+  }
+  
 
 
 @import "../bootstrap/scss/bootstrap.scss";
