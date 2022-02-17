@@ -9,13 +9,193 @@
     <link rel="stylesheet" href="./assets/scss/main.css" />
   </head>
 
-  <body>
-   
-    
+  <body class="bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning py-2">
+      <div
+        class="navbar-brand d-flex justify-content-center align-items-center d-inline-block flex-column logo ml-4"
+      >
+        <a href="index.html" class="text-black-50 align-self-center">
+          <img src="./Design/Logo-resized.png" alt="" class="w-100 d-block" />
+        </a>
+        <h6 class="mb-0"><small class="font-weight-bold">BRAINSTER</small></h6>
+      </div>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div class="navbar-toggler-inner"></div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto pt-5 pt-lg-0">
+          <li class="nav-item py-sm-3 ml-2">
+            <a
+              class="nav-link font-weight-bold p-lg-2 from-top ml-0 ml-lg-4 h6"
+              href="https://brainster.co/marketing/"
+              ><span>Академија за маркетинг</span></a
+            >
+          </li>
+          <li class="nav-item py-3 ml-2">
+            <a
+              class="nav-link font-weight-bold p-lg-2 from-left ml-0 ml-lg-4 h6"
+              href="https://brainster.co/full-stack/"
+              ><span>Академија за програмирање</span></a
+            >
+          </li>
+          <li class="nav-item py-3 ml-2">
+            <a
+              class="nav-link font-weight-bold p-lg-2 from-right ml-0 ml-lg-4 h6"
+              href="https://brainster.co/data-science/"
+              ><span>Академија за data science</span></a
+            >
+          </li>
+          <li class="nav-item py-3 ml-2">
+            <a
+              class="nav-link font-weight-bold p-lg-2 from-bottom ml-0 ml-lg-4 h6"
+              href="https://brainster.co/graphic-design/"
+              ><span>Академија за дизајн</span></a
+            >
+          </li>
+          <li class="nav-item py-3">
+            <a
+              href="./employment_page/employment_form.php"
+              class="btn btn-danger text-white mx-4 mt-2 mx-lg-5 mx-md-5 py-2 button"
+              ><span class="h5">Вработи наш студент</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="none">
+      <div class="container-fluid bg-warning">
+        <div class="row">
+          <div class="col-12 text-center py-5">
+            <h1 class="display-1 font-weight-bold">Вработи студенти</h1>
+          </div>
+        </div>
+        <div class="container">
+          <form method="POST">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label for="fullname" class="form-label"
+                    ><b>Име и презиме</b></label
+                  >
+
+                  <input
+                    type="text"
+                    class="form-control p-4"
+                    id="fullname"
+                    placeholder="Вашето име и презиме"
+                    name="fullname"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    ><b>Контакт имејл</b>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control p-4"
+                    id="email"
+                    name="email"
+                    placeholder="Контакт имејл на вашата компанија"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="selection" class="form-label"
+                    ><b>Тип на студенти</b>
+                  </label>
+                  <div class="input-group mb-3">
+                    <select
+                      class="form-select p-3 w-100 rounded bg-white" 
+                      id="selection"
+                      name="selection"
+                    >
+                      <option selected hidden value="0" > 
+                        Изберете тип на студент
+                      </option>
+                      <option value="1" name="selection">
+                        Студенти од маркетинг
+                      </option>
+                      <option value="2" name="selection">
+                        Студенти од програмирање
+                      </option>
+                      <option value="3" name="selection">
+                        Студенти од data science
+                      </option>
+                      <option value="4" name="selection">
+                        Студенти од дизајн
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label for="companyname" class="form-label"
+                    ><b>Име на компанија</b></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control p-4"
+                    id="companyname"
+                    placeholder="Име на вашата компанија"
+                    required
+                    name="company_name"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="contactphone" class="form-label"
+                    ><b>Контакт телефон</b></label
+                  >
+
+                  <input
+                    type="tel"
+                    class="form-control p-4"
+                    id="contactphone"
+                    placeholder="Контакт телефон на вашата компанија"
+                    required
+                    name="contact_phone"
+                  />
+                </div>
+                <div class="">
+                  <label for="submit" class="form-label"></label>
+                  <input
+                  name="submit"
+                    class="btn-block rounded p-2  btn-danger text-uppercase text-center"
+                    value="испрати"
+                    type="submit"
+                    id="submit"
+                    
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="container-fluid text-center text-white bg-dark">
+          <div class="row">
+            <div class="col-12">
+              <p class="p-4">
+                Изработено со &#10084; од студентите на Brainster
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>
-
 </html>
