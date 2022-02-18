@@ -5,182 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Вработи студент</title>
-
+    <link rel="stylesheet" href="./query.css" />
     <link rel="stylesheet" href="./assets/scss/main.css" />
+    
   </head>
 
-  <body class="bg-warning">
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning py-2">
-      <div
-        class="navbar-brand d-flex justify-content-center align-items-center d-inline-block flex-column logo ml-4"
-      >
-        <a href="index.html" class="text-black-50 align-self-center">
-          <img src="./Design/Logo-resized.png" alt="" class="w-100 d-block" />
-        </a>
-        <h6 class="mb-0"><small class="font-weight-bold">BRAINSTER</small></h6>
-      </div>
-      <button
-        class="navbar-toggler border-0"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <div class="navbar-toggler-inner"></div>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto pt-5 pt-lg-0">
-          <li class="nav-item py-sm-3 ml-2">
-            <a
-              class="nav-link font-weight-bold p-lg-2 from-top ml-0 ml-lg-4 h6"
-              href="https://brainster.co/marketing/"
-              ><span>Академија за маркетинг</span></a
-            >
-          </li>
-          <li class="nav-item py-3 ml-2">
-            <a
-              class="nav-link font-weight-bold p-lg-2 from-left ml-0 ml-lg-4 h6"
-              href="https://brainster.co/full-stack/"
-              ><span>Академија за програмирање</span></a
-            >
-          </li>
-          <li class="nav-item py-3 ml-2">
-            <a
-              class="nav-link font-weight-bold p-lg-2 from-right ml-0 ml-lg-4 h6"
-              href="https://brainster.co/data-science/"
-              ><span>Академија за data science</span></a
-            >
-          </li>
-          <li class="nav-item py-3 ml-2">
-            <a
-              class="nav-link font-weight-bold p-lg-2 from-bottom ml-0 ml-lg-4 h6"
-              href="https://brainster.co/graphic-design/"
-              ><span>Академија за дизајн</span></a
-            >
-          </li>
-          <li class="nav-item py-3">
-            <a
-              href="./employment_page/employment_form.php"
-              class="btn btn-danger text-white mx-4 mt-2 mx-lg-5 mx-md-5 py-2 button"
-              ><span class="h5">Вработи наш студент</span></a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="none">
-      <div class="container-fluid bg-warning">
-        <div class="row">
-          <div class="col-12 text-center py-5">
-            <h1 class="display-1 font-weight-bold">Вработи студенти</h1>
-          </div>
+  <body class="body bg-warning">
+   
+    <div class="container-fluid" id="main">
+      <div class="heading row">
+        <div class="col-12">
+          <h1 class="h1-style h1-style-sec">Вработи студенти</h1>
         </div>
-        <div class="container">
-          <form method="POST">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="mb-3">
-                  <label for="fullname" class="form-label"
-                    ><b>Име и презиме</b></label
-                  >
+       
+     </div>
+     <div class="container">
+      <form method="get"> 
+       <div class="row">
 
-                  <input
-                    type="text"
-                    class="form-control p-4"
-                    id="fullname"
-                    placeholder="Вашето име и презиме"
-                    name="fullname"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label"
-                    ><b>Контакт имејл</b>
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control p-4"
-                    id="email"
-                    name="email"
-                    placeholder="Контакт имејл на вашата компанија"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="selection" class="form-label"
-                    ><b>Тип на студенти</b>
-                  </label>
-                  <div class="input-group mb-3">
-                    <select
-                      class="form-select p-3 w-100 rounded bg-white" 
-                      id="selection"
-                      name="selection"
-                    >
-                      <option selected hidden value="0" > 
-                        Изберете тип на студент
-                      </option>
-                      <option value="1" name="selection">
-                        Студенти од маркетинг
-                      </option>
-                      <option value="2" name="selection">
-                        Студенти од програмирање
-                      </option>
-                      <option value="3" name="selection">
-                        Студенти од data science
-                      </option>
-                      <option value="4" name="selection">
-                        Студенти од дизајн
-                      </option>
-                    </select>
-                  </div>
-                </div>
-              </div>
               <div class="col-12 col-md-6">
-                <div class="mb-3">
-                  <label for="companyname" class="form-label"
-                    ><b>Име на компанија</b></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control p-4"
-                    id="companyname"
-                    placeholder="Име на вашата компанија"
-                    required
-                    name="company_name"
-                  />
-                </div>
-                <div class="mb-4">
-                  <label for="contactphone" class="form-label"
-                    ><b>Контакт телефон</b></label
-                  >
+              
+                 <label for="name">Име и презиме</label>
+                 <input type="text" name="name" id="name" class="form-control form-bd input-lg"
+                   placeholder="Вашето име и презиме " aria-describedby="helpId" required>
+             
+             </div>
 
-                  <input
-                    type="tel"
-                    class="form-control p-4"
-                    id="contactphone"
-                    placeholder="Контакт телефон на вашата компанија"
-                    required
-                    name="contact_phone"
-                  />
-                </div>
-                <div class="">
-                  <label for="submit" class="form-label"></label>
-                  <input
-                  name="submit"
-                    class="btn-block rounded p-2  btn-danger text-uppercase text-center"
-                    value="испрати"
-                    type="submit"
-                    id="submit"
-                    
-                  />
-                </div>
+             <div class="col-12 col-md-6">
+               
+                 <label for="company">Име на компанија</label> 
+                 <input type="text" name="company" id="company"
+                   class="form-control form-bd input-lg" placeholder="Име на вашата компанија" aria-describedby="helpId"
+                   required>
+              
+             </div>
+
+             <div class="col-12 col-md-6">
+               
+                 <label for="email">Контакт имејл</label>
+                 <input type="email" name="email" id="email" class="form-control form-bd input-lg" value=""
+                   placeholder="Контакт имејл на вашата компанија" required>
+              
+             </div>
+
+             <div class="col-12 col-md-6">
+              
+                 <label for="tel">Контакт телефон</label>
+                 <input type="tel" name="tel" id="tel" class="form-control form-bd input-lg numberonly" minlength="9" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" 
+                 placeholder="Контакт телефон на вашата компанија" required>
+              
+             </div> 
+
+             <div class="col-12 col-md-6">
+              <label for="select">Тип на студенти</label>
+              <div class="form-group">
+                <div class="custom-select mb-4"> 
+                  
+                <select class="form-control form-bd input-lg select" name="select" id="select" required> 
+                  <option value="0" >Изберете тип на студент</option>
+                  <option value="Студент од маркетинг">Студент од маркетинг</option>
+                  <option value="Студент од програмирање">Студент од програмирање</option>
+                  <option value="Студент од data science">Студент од data science</option>
+                  <option value="Студент од дизајн">Студент од дизајн</option>
+                </select>
               </div>
             </div>
-          </form>
-        </div>
-      </div>
+             </div>
+
+             <div class="col-12 col-md-6 pb-5">
+               
+                 <label for="submit" class="label-hide">label</label>
+                 <button type="submit" id="submit"
+                   class="btn btn-danger btn-block btn-large text-uppercase">Испрати</button>
+               
+              </div>
+         </div>
+        </form>
+       </div>
+   </div>
+
       <footer>
         <div class="container-fluid text-center text-white bg-dark">
           <div class="row">
@@ -192,10 +95,19 @@
           </div>
         </div>
       </footer>
-    </div>
+   
 
+      <script>
+        document.getElementsByClassName('custom-select')[0].style.border = "0px";
+        document.getElementsByClassName('custom-select')[0].style.background = "translatent";
+        document.getElementsByClassName('custom-select')[0].style.height = "auto";
+    </script> 
+              
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/form.js"></script>
+    
   </body>
+
 </html>
