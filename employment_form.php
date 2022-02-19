@@ -149,7 +149,7 @@ VALUES ('$fullname', '$email', '$select', '$company_name', '$contact_phone')";
           </li>
           <li class="nav-item py-3">
             <a
-              href="./employment_page/employment_form.php"
+              href="./employment_form.php"
               class="btn btn-danger text-white mx-4 mt-2 mx-lg-5 mx-md-5 py-2 button"
               ><span class="h5">Вработи наш студент</span></a
             >
