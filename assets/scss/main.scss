@@ -4,102 +4,92 @@
 @import "../bootstrap/scss/bootstrap.scss";
 
 //
+.main{
+    padding-bottom: 13.5rem;
+}
 
-// .heading {
-//     text-align: center;
-//     padding   : 10rem 0 13rem 0;
-// }
+@media (max-width: 768px){
+    .main{
+        padding-bottom : 10rem !important;
+    }
+}
+
+.heading {
+    padding: 5rem 0rem;
+}
+
+// * SELECT
+
+::-webkit-input-placeholder {
+    font-style         : italic;
+}
+:-moz-placeholder {
+    font-style         : italic;
+}
+::-moz-placeholder {
+    font-style         : italic;
+}
+:-ms-input-placeholder {
+    font-style         : italic;
+}
+
 
 .label-hide {
-    visibility: hidden;
-    opacity   : 0;
+    display            : none;
+    opacity            : 0;
 }
 
-// label {
-//     font-size: 1.5rem;
-// }
-
-// .input-lg {
-//     font-size : 1.3rem;
-//     height    : 5.5rem;
-//     font-style: italic;
-//     padding   : 1rem 2rem;
-// }
-
-// .btn-large {
-//     height          : 5.5rem;
-//     font-size       : 1.3rem;
-//     font-weight     : 600;
-//     background-color: #ff1300;
-//     border-radius   : 6px;
-// }
-
-button#submit:focus {
-    outline: none !important;
+form {
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
-button#submit {
-    border: none;
-}
-
-
-.form-bd {
-    border: none;
-}
-
-// form {
-//     -webkit-font-smoothing: subpixel-antialiased;
-// }
-
-/* SELECT */
 .custom-select {
-    position: relative;
+    position           : relative;
 }
 
 .custom-select .select {
-    display: none;
+    display            : none;
 }
 
 .select-selected {
-    // background-image   : url(../img/arrow-down.png);
-    // background-position: right center;
+    background-image   : url(../img/arrow-down.png);
+    background-position: right center;
     background-repeat  : no-repeat;
-    // background-size    : 3rem;
+    background-size    : 2rem;
     background-origin  : content-box;
-    // height             : 4rem;
-    // padding            : 1rem 2rem;
-    
-    font-size          : 1.3rem;
-    font-weight        : 700;
-    // border-radius      : 6px;
-    // width              : 100%;
-    // color              : #302f38 !important;
-    
-    // background-color   : #fff;
-    // box-shadow         : inset 0 1px 1px rgba(0, 0, 0, .075);
-    // -webkit-transition : border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    // transition         : border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    height             : 3.1rem;
+    padding            : 0rem 0.75rem;
+    font-size          : 1rem;
+    border-radius      : 0.3rem;
+    width              : 100%;
+    color              : var(--dark);
+    background-color   : var(--white);
     cursor             : pointer;
     display            : -webkit-box;
     display            : flex;
     -webkit-box-align  : center;
     align-items        : center;
+    font-weight        : 700;
 }
 
 .select-items {
-    position        : relative;
-    // background-color: #000;
-    z-index         : 99;
-    // border-radius   : 6px;
-    font-size       : 1.3rem;
-    margin-top      : 2rem !important;
+    position           : relative;
+    background-color   : var(--white);
+    z-index            : 99;
+    border-radius      : 0.3rem;
+    font-size          : 1rem;
+    margin-top         : 1.5rem;
+    border-bottom      : 0.3rem;
+    border-color       : var(--dark);
+    
 }
 
+
 .select-items div {
-    // color              : #302f38;
-    padding            : 1rem 2rem;
-    border             : 1px solid transparent;
-    // border-color       : transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    color              : var(--dark);
+    padding            : 0rem 0.75rem;
+    border-bottom      : 1px solid var(--dark);
+    border-color       : transparent transparent var(--light) transparent;
     cursor             : pointer;
     -webkit-user-select: none;
     -moz-user-select   : none;
@@ -109,26 +99,23 @@ button#submit {
     display            : flex;
     -webkit-box-align  : center;
     align-items        : center;
-    height             : 5.5rem;
-    font-weight        : 700;
+    height             : 3.1rem;
+    border-radius      : 0.3rem;
+    font-weight: 700;
+    
 }
 
 .select-hide {
-    display: none !important;
+    display            : none !important;
+    
 }
 
 .select-items div:hover,
 .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-    overflow        : hidden;
+    background-color   : var(--light);
+    overflow           : hidden;
 }
 
-.select-items div:hover:first-child {
-    border-top-left-radius : 6px;
-    border-top-right-radius: 6px;
-}
-
-.select-items div:hover:last-child {
-    border-bottom-left-radius : 6px;
-    border-bottom-right-radius: 6px;
+#submit {
+    height: 3.1rem;
 }
