@@ -1,7 +1,7 @@
 <?php
 
 // Connection to DataBase
-$host = "192.168.0.26";
+$host = "localhost";
 $username = "root";
 $password =  "1234";
 $database = "employment_form";
