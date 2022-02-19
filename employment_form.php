@@ -1,3 +1,91 @@
+<?php
+
+// Connection to DataBase
+$host = "192.168.0.26";
+$username = "root";
+$password =  "1234";
+$database = "employment_form";
+
+$conn = new mysqli($host, $username, $password, $database);
+
+$fullname = $email = $select = $company_name = $contact_phone = " ";
+
+function fullnameCheck($fullname) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["fullname"])) {
+    $fullname = "<span class='text-danger fw-bold' style='font-size:14px'>Пополнете тука!</span>";
+    return $fullname ;
+  } else {
+
+    }
+  }
+}
+
+function emailCheck($email) {
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $email = "<span class='text-danger fw-bold' style='font-size:14px'>Пополнете тука!</span>";
+      return $email ;
+    } else {
+      
+    }
+  }
+}
+
+function selectionCheck($select){
+  if($_SERVER['REQUEST_METHOD'] == "POST"){
+    if($select == '0'){
+      return "<span class='text-danger fw-bold' style='font-size:14px'>Пополнете тука!</span>";
+    }
+    else {
+
+    }
+  }
+}
+
+function company_nameCheck($company_name) {
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["company_name"])) {
+      $company_name = "<span class='text-danger fw-bold' style='font-size:14px'>Пополнете тука!</span>";
+      return $company_name ;
+    } else {
+      
+      }
+    }
+  }
+
+  function telephoneCheck($contact_phone) {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      if (empty($_POST["contact_phone"])) {
+        $contact_phone = "<span class='text-danger fw-bold' style='font-size:14px'>Пополнете тука!</span>";
+        return $contact_phone ;
+      } else {
+    
+        }
+      }
+    }
+
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+  
+$fullname = $_POST['fullname'];
+$email = $_POST['email'];
+$selection = $_POST['select']; 
+$company_name = $_POST ['company_name'];
+$contact_phone = $_POST ['contact_phone'];
+$insertData = "INSERT INTO form (fullname, email, selection, companyname, contactphone)
+VALUES ('$fullname', '$email', '$select', '$company_name', '$contact_phone')";
+
+  
+}
+
+    if ($conn->connect_error) {
+      echo "ERROR connecting to server...";
+    } else {
+      
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -77,15 +165,15 @@
         </div>
       </div>
       <div class="container">
-        <form method="get">
+        <form method="POST">
           <div class="row">
             <div class="col-12 col-md-6 py-2">
               <label for="name" class="font-weight-bold">Име и презиме</label>
-              
+              <?php echo fullnameCheck($fullname); ?>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="fullname"
+                id="fullname"
                 class="form-control p-4"
                 placeholder="Вашето име и презиме "
                 aria-describedby="helpId"
@@ -95,10 +183,11 @@
 
             <div class="col-12 col-md-6 py-2">
               <label for="company" class="font-weight-bold">Име на компанија</label>
+              <?php echo company_nameCheck($company_name)?>
               <input
                 type="text"
-                name="company"
-                id="company"
+                name="company_name"
+                id="companyname"
                 class="form-control p-4"
                 placeholder="Име на вашата компанија"
                 aria-describedby="helpId"
@@ -108,6 +197,7 @@
 
             <div class="col-12 col-md-6 py-2">
               <label for="email" class="font-weight-bold">Контакт имејл</label>
+              <?php echo emailCheck($email);?>
               <input
                 type="email"
                 name="email"
@@ -121,10 +211,11 @@
 
             <div class="col-12 col-md-6 py-2">
               <label for="tel" class="font-weight-bold">Контакт телефон</label>
+              <?php echo telephoneCheck($contact_phone)?>
               <input
                 type="tel"
-                name="tel"
-                id="tel"
+                name="contact_phone"
+                id="contactphone"
                 class="form-control p-4"
                 minlength="9"
                 placeholder="Контакт телефон на вашата компанија"
@@ -134,6 +225,7 @@
 
             <div class="col-12 col-md-6 py-2">
               <label for="select" class="font-weight-bold">Тип на студенти</label>
+              <?php echo selectionCheck($selection)?>
               <div class="form-group">
                 <div class="custom-select mb-4">
                   <select
@@ -163,9 +255,12 @@
               <button
                 type="submit"
                 id="submit"
+                name="submit"
+                value="испрати"
                 class="btn btn-danger btn-block text-uppercase font-weight-bold"
               >
                 Испрати
+                
               </button>
             </div>
           </div>
