@@ -1,7 +1,9 @@
 # Project01
 
+# Project created by specifications from files send(files located in folder Design: Filters.png, Form.png, Form dropdown open.png and Прв проект_ Brainster Labs Full Stack.pdf)
 
-#Tehnologies used for development:
+
+# Tehnologies used for development:
     1.HTML
     2.CSS
     3.Bootstrap
@@ -11,9 +13,9 @@
     7.MySQL
     8.PHP
 
-#Link of live version of Project01 :
+# Link of live version of Project01 :
     https://ilkovski-project-01.000webhostapp.com/index.html
 
-#Created by:
+# Created by:
     Dejan Ilkovski
 
