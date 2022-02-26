@@ -1,6 +1,10 @@
 @import "../bootstrap/scss/bootstrap.scss";
 //
+
+
+
 // BRAINSTER_LABS.HTML
+
 // NAVBAR
 .logo {
     width: 10% !important;
@@ -322,6 +326,7 @@ nav {
 }
 
 // BUTTONS-CARDS
+
 .buttons {
     ul li:hover {
         cursor: pointer;
@@ -365,7 +370,8 @@ nav {
 }
 
 .row:hover>.animation-card:not(:hover) {
-    filter: blur(4px);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 
 // --------------------------------------------

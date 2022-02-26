@@ -10297,7 +10297,8 @@ nav ul ul li a:hover span {
 }
 
 .row:hover > .animation-card:not(:hover) {
-  filter: blur(4px);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 
 .main {
