@@ -115,7 +115,7 @@ nav {
             background: var(--danger) !important;
             transition-delay: 0.35s;
         }
-        /* From Top */
+        // From Top
         .from-top:before,
         .from-top:after {
             left: 0;
@@ -139,7 +139,7 @@ nav {
         .from-top:hover:after {
             height: 100%;
         }
-        /* From Left */
+        // From Left
         .from-left:before,
         .from-left:after {
             top: 0;
@@ -162,7 +162,7 @@ nav {
         .from-left:hover:after {
             width: 100%;
         }
-        /* From Right */
+        // From Right
         .from-right:before,
         .from-right:after {
             top: 0;
@@ -185,7 +185,7 @@ nav {
         .from-right:hover:after {
             width: 100%;
         }
-        /* From Bottom */
+        // From Bottom
         .from-bottom:before,
         .from-bottom:after {
             left: 0;
