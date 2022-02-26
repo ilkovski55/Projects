@@ -262,7 +262,7 @@ nav {
 .navbar-toggler-inner::after {
   width: 1.5em;
   height: 0.16em;
-  background-color: #000000;
+  background-color: var(--dark);
   position: absolute;
 }
 
@@ -411,7 +411,7 @@ nav {
 
 
 .main{
-    padding-bottom: 13rem;
+    padding-bottom: 12.8rem;
 }
 
 @media (max-width: 768px){
@@ -539,4 +539,8 @@ form {
     }
 
 }
+}
+
+.nav-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

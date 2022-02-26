@@ -209,7 +209,7 @@ nav ul ul li a:hover span {
 .navbar-toggler-inner::after {
   width: 1.5em;
   height: 0.16em;
-  background-color: #000000;
+  background-color: var(--dark);
   position: absolute;
 }
 
@@ -10279,7 +10279,7 @@ h3 {
 }
 
 .main {
-  padding-bottom: 13rem;
+  padding-bottom: 12.8rem;
 }
 
 @media (max-width: 768px) {
@@ -10399,6 +10399,10 @@ form {
   .client .client_text {
     font-size: 2rem;
   }
+}
+
+.nav-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*# sourceMappingURL=main.css.map */

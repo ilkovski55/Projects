@@ -10,41 +10,30 @@
   </head>
 
   <body class="body bg-warning">
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning py-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning py-2 nav-shadow border-bottom border-warning">
       <div
         class="navbar-brand d-flex justify-content-center align-items-center d-inline-block flex-column logo ml-4"
       >
         <a href="../brainster_labs.html" class="text-black-50 align-self-center">
-          <img src="../Design/Logo-resized.png" alt="" class="w-100 d-block" />
+          <img src="../Design/Logo-resized.png" alt="Brainster Logo img" class="w-100 d-block" />
         </a>
         <h6 class="mb-0"><small class="font-weight-bold">BRAINSTER</small></h6>
       </div>
-      <button
-        class="navbar-toggler border-0"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <div class="navbar-toggler-inner"></div>
-      </button>
+    </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto pt-5 pt-lg-0">
           <li class="nav-item py-sm-3 ml-2">
-            <a
-              class="nav-link font-weight-bold p-lg-2 from-top ml-0 ml-lg-4 h6"
+            <a class="nav-link font-weight-bold p-lg-2 from-top ml-0 ml-lg-4 h6"
               href="https://brainster.co/marketing/"
-              ><span>Академија за маркетинг</span></a
-            >
+              ><span>Академија за маркетинг</span></a>
           </li>
           <li class="nav-item py-3 ml-2">
             <a
-              class="nav-link font-weight-bold p-lg-2 from-left ml-0 ml-lg-4 h6"
-              href="https://brainster.co/full-stack/"
-              ><span>Академија за програмирање</span></a
-            >
+            class="nav-link font-weight-bold p-lg-2  from-left ml-0 ml-lg-4 h6"
+            href="https://brainster.co/full-stack/"
+            ><span>Академија за програмирање</span></a>
           </li>
           <li class="nav-item py-3 ml-2">
             <a
@@ -55,32 +44,31 @@
           </li>
           <li class="nav-item py-3 ml-2">
             <a
-              class="nav-link font-weight-bold p-lg-2 from-bottom ml-0 ml-lg-4 h6"
-              href="https://brainster.co/graphic-design/"
-              ><span>Академија за дизајн</span></a
-            >
-          </li>
-          <li class="nav-item py-3">
-            <a
-              href="./employment_form/employment_form.html"
-              class="btn btn-danger text-white mx-4 mt-2 mx-lg-5 mx-md-5 py-2 button"
-              ><span class="h5">Вработи наш студент</span></a
-            >
-          </li>
+            class="nav-link font-weight-bold p-lg-2 from-bottom ml-0 ml-lg-4 h6"
+            href="https://brainster.co/graphic-design/"
+            ><span>Академија за дизајн</span></a
+          >
+         </li>
+         <li class="nav-item py-3">
+          <a
+          href="employment_form.html"
+          class="btn btn-danger text-white mx-4 mt-2 mx-lg-5 mx-md-5  py-2 button" 
+        ><span class="h5">Вработи наш студент</span></a>
+         </li>
         </ul>
-      </div>
+        </div>
     </nav>
 
     
 
-    <div class="container-fluid main">
+    <div class="container-fluid main none">
       <div class="row">
         <div class="col-12 heading_form text-center">
           <h1 class="display-3">Вработи студенти</h1>
         </div>
       </div>
       <div class="container">
-        <form action="client.php" method="POST">
+        <form action="./client.php" method="POST">
           <div class="row">
             <div class="col-12 col-md-6 py-2">
               <label for="name" class="font-weight-bold">Име и презиме</label>
@@ -193,6 +181,7 @@
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/navbar-script.js"></script>
     <script src="../assets/js/form.js"></script>
     <script>
       document.getElementsByClassName("custom-select")[0].style.border = "0px";
