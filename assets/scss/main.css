@@ -10279,7 +10279,7 @@ h3 {
 }
 
 .main {
-  padding-bottom: 13.5rem;
+  padding-bottom: 13rem;
 }
 
 @media (max-width: 768px) {
@@ -10287,8 +10287,8 @@ h3 {
     padding-bottom: 10rem !important;
   }
 }
-.heading {
-  padding: 5rem 0rem;
+.heading_form {
+  padding: 4rem 0rem;
 }
 
 ::-webkit-input-placeholder {
@@ -10325,7 +10325,7 @@ form {
 }
 
 .select-selected {
-  background-image: url(./Design/arrow-down.png);
+  background-image: url(/Design/arrow-down.png);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 2rem;
@@ -10387,6 +10387,18 @@ form {
 
 #submit {
   height: 3.1rem;
+}
+
+.client {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .client .client_text {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -411,7 +411,7 @@ nav {
 
 
 .main{
-    padding-bottom: 13.5rem;
+    padding-bottom: 13rem;
 }
 
 @media (max-width: 768px){
@@ -420,8 +420,8 @@ nav {
     }
 }
 
-.heading {
-    padding: 5rem 0rem;
+.heading_form {
+    padding: 4rem 0rem;
 }
 
 // * SELECT
@@ -458,7 +458,7 @@ form {
 }
 
 .select-selected {
-    background-image   : url(./Design/arrow-down.png);
+    background-image   : url(/Design/arrow-down.png);
     background-position: right center;
     background-repeat  : no-repeat;
     background-size    : 2rem;
@@ -507,7 +507,7 @@ form {
     align-items        : center;
     height             : 3.1rem;
     border-radius      : 0.3rem;
-    font-weight: 700;
+    font-weight        : 700;
     
 }
 
@@ -524,4 +524,19 @@ form {
 
 #submit {
     height: 3.1rem;
+}
+
+
+.client {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  @media (max-width: 768px){
+    .client_text {
+        font-size: 2rem;
+    }
+
+}
 }
