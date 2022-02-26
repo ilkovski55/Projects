@@ -1,39 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Вработи студент</title>
     <link rel="stylesheet" href="../assets/scss/main.css" />
-  </head>
+</head>
 
-  <body class="body bg-warning">
+<body class="body bg-warning">
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-warning py-2 nav-shadow border-bottom border-warning">
-      <div
-        class="navbar-brand d-flex justify-content-center align-items-center d-inline-block flex-column logo ml-4"
-      >
-        <a href="../brainster_labs.html" class="text-black-50 align-self-center">
-          <img src="../Design/Logo-resized.png" alt="Brainster Logo img" class="w-100 d-block" />
-        </a>
-        <h6 class="mb-0"><small class="font-weight-bold">BRAINSTER</small></h6>
-      </div>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="navbar-toggler-inner"></div>
-    </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto pt-5 pt-lg-0">
-          <li class="nav-item py-sm-3 ml-2">
-            <a class="nav-link font-weight-bold p-lg-2 from-top ml-0 ml-lg-4 h6"
-              href="https://brainster.co/marketing/"
-              ><span>Академија за маркетинг</span></a>
+        <div class="navbar-brand d-flex justify-content-center align-items-center d-inline-block flex-column logo ml-4">
+            <a href="../brainster_labs.html" class="text-black-50 align-self-center">
+                <img src="../Design/Logo-resized.png" alt="Brainster Logo img" class="w-100 d-block" />
+            </a>
+            <h6 class="mb-0"><small class="font-weight-bold">BRAINSTER</small></h6>
+        </div>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-toggler-inner rounded"></div>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto pt-5 pt-lg-0">
+                <li class="nav-item py-sm-3 ml-2">
+                    <a class="nav-link font-weight-bold p-lg-2 from-top ml-0 ml-lg-4 h6" href="https://brainster.co/marketing/"><span>Академија за маркетинг</span></a
+            >
           </li>
           <li class="nav-item py-3 ml-2">
             <a
-            class="nav-link font-weight-bold p-lg-2  from-left ml-0 ml-lg-4 h6"
-            href="https://brainster.co/full-stack/"
-            ><span>Академија за програмирање</span></a>
+              class="nav-link font-weight-bold p-lg-2 from-left ml-0 ml-lg-4 h6"
+              href="https://brainster.co/full-stack/"
+              ><span>Академија за програмирање</span></a
+            >
           </li>
           <li class="nav-item py-3 ml-2">
             <a
@@ -44,23 +43,24 @@
           </li>
           <li class="nav-item py-3 ml-2">
             <a
-            class="nav-link font-weight-bold p-lg-2 from-bottom ml-0 ml-lg-4 h6"
-            href="https://brainster.co/graphic-design/"
-            ><span>Академија за дизајн</span></a
-          >
-         </li>
-         <li class="nav-item py-3">
-          <a
-          href="employment_form.html"
-          class="btn btn-danger text-white mx-4 mt-2 mx-lg-5 mx-md-5  py-2 button" 
-        ><span class="h5">Вработи наш студент</span></a>
-         </li>
+              class="nav-link font-weight-bold p-lg-2 from-bottom ml-0 ml-lg-4 h6"
+              href="https://brainster.co/graphic-design/"
+              ><span>Академија за дизајн</span></a
+            >
+          </li>
+          <li class="nav-item py-3">
+            <a
+              href="employment_form.html"
+              class="btn btn-danger text-white mx-4 mt-2 mx-lg-5 mx-md-5 py-2 button"
+              ><span class="h5">Вработи наш студент</span></a
+            >
+          </li>
         </ul>
-        </div>
+      </div>
     </nav>
+    <!-- /NAVBAR -->
 
-    
-
+    <!-- FORM -->
     <div class="container-fluid main none">
       <div class="row">
         <div class="col-12 heading_form text-center">
@@ -84,7 +84,9 @@
             </div>
 
             <div class="col-12 col-md-6 py-2">
-              <label for="company" class="font-weight-bold">Име на компанија</label>
+              <label for="company" class="font-weight-bold"
+                >Име на компанија</label
+              >
               <input
                 type="text"
                 name="companyname"
@@ -123,7 +125,9 @@
             </div>
 
             <div class="col-12 col-md-6 py-2">
-              <label for="select" class="font-weight-bold">Тип на студенти</label>
+              <label for="select" class="font-weight-bold"
+                >Тип на студенти</label
+              >
               <div class="form-group">
                 <div class="custom-select mb-4">
                   <select
@@ -151,23 +155,23 @@
             </div>
 
             <div class="col-12 col-md-6 pt-sm-0 pt-md-4 mt-md-3">
-              <label for="submit" class="label-hide ">label</label>
+              <label for="submit" class="label-hide">label</label>
               <button
                 type="submit"
                 id="submit"
                 name="submit"
-                
                 class="btn btn-danger btn-block text-uppercase font-weight-bold"
               >
                 Испрати
-                
               </button>
             </div>
           </div>
         </form>
       </div>
     </div>
+    <!-- /FORM -->
 
+    <!-- FOOTER -->
     <footer>
       <div class="container-fluid text-center text-white bg-dark">
         <div class="row">
@@ -177,25 +181,14 @@
         </div>
       </div>
     </footer>
+    <!-- /FOOTER -->
 
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- SCRIPT FOR NAVBAR -->
     <script src="../assets/js/navbar-script.js"></script>
+     <!-- SCRIPT FOR FORM-SELECT INPUTS -->
     <script src="../assets/js/form.js"></script>
-    <script>
-      document.getElementsByClassName("custom-select")[0].style.border = "0px";
-      document.getElementsByClassName("custom-select")[0].style.background =
-        "translatent";
-      document.getElementsByClassName("custom-select")[0].style.height = "auto";
-      document.getElementsByClassName("custom-select")[0].style.display =
-        "block";
-      document.getElementsByClassName("custom-select")[0].style.width = "auto";
-      document.getElementsByClassName("custom-select")[0].style.padding = "0px";
-      document.getElementsByClassName("custom-select")[0].style.background =
-        "none";
-    </script>
   </body>
 </html>
-
-
