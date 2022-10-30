@@ -81,7 +81,9 @@ class ShowModelCommand extends DatabaseInspectionCommand
      */
     public function handle()
     {
-        $this->ensureDependenciesExist();
+        if (! $this->ensureDependenciesExist()) {
+            return 1;
+        }
 
         $class = $this->qualifyModel($this->argument('model'));
 
@@ -113,6 +115,7 @@ class ShowModelCommand extends DatabaseInspectionCommand
     protected function getAttributes($model)
     {
         $schema = $model->getConnection()->getDoctrineSchemaManager();
+        $this->registerTypeMappings($schema->getDatabasePlatform());
         $table = $model->getConnection()->getTablePrefix().$model->getTable();
         $columns = $schema->listTableColumns($table);
         $indexes = $schema->listTableIndexes($table);
@@ -152,7 +155,7 @@ class ShowModelCommand extends DatabaseInspectionCommand
                     || $method->getDeclaringClass()->getName() !== get_class($model)
             )
             ->mapWithKeys(function (ReflectionMethod $method) use ($model) {
-                if (preg_match('/^get(.*)Attribute$/', $method->getName(), $matches) === 1) {
+                if (preg_match('/^get(.+)Attribute$/', $method->getName(), $matches) === 1) {
                     return [Str::snake($matches[1]) => 'accessor'];
                 } elseif ($model->hasAttributeMutator($method->getName())) {
                     return [Str::snake($method->getName()) => 'attribute'];
@@ -353,6 +356,7 @@ class ShowModelCommand extends DatabaseInspectionCommand
     protected function getCastsWithDates($model)
     {
         return collect($model->getDates())
+            ->filter()
             ->flip()
             ->map(fn () => 'datetime')
             ->merge($model->getCasts());
