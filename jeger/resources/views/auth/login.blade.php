@@ -1,8 +1,14 @@
+@extends('layouts.main')
+
+@section('title', 'Dashboard')
+
+@section('content')
+
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                <img src="{{asset('images/jagermeister.png')}}" alt="stag" class="w-25 mx-auto my-auto py-1">
             </a>
         </x-slot>
 
@@ -55,3 +61,4 @@
         </form>
     </x-auth-card>
 </x-guest-layout>
+@endsection

@@ -4,16 +4,25 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
+                <div class="shrink-0 flex items-center w-25 my-3">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                    <img src="{{asset('images/jagermeister.png')}}" alt="stag" class="logo_nav my-auto mt-1 ml-5">
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('All Receipts') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('aproved')" :active="request()->routeIs('aproved')">
+                        {{ __('Aproved Receipts') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('declined')" :active="request()->routeIs('declined')">
+                        {{ __('Declined Receipts') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('awarded')" :active="request()->routeIs('awarded')">
+                        {{ __('Awarded Receipts') }}
                     </x-nav-link>
                 </div>
             </div>

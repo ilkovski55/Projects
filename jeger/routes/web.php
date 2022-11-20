@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\WebsiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +15,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('',[WebsiteController::class,'index']);
+Route::post('',[WebsiteController::class,'store'])->name('file.store');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/dashboard', [AdminController::class, 'index'])->middleware(['auth'])->name('dashboard');
+
+Route::get('/aproved', [AdminController::class, 'getApproved'])->middleware(['auth'])->name('aproved');
+
+Route::get('/declined', [AdminController::class, 'getDeclined'])->middleware(['auth'])->name('declined');
+
+Route::get('/awarded', [AdminController::class, 'getAwarded'])->middleware(['auth'])->name('awarded');
+
 
 require __DIR__.'/auth.php';
